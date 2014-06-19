@@ -4,7 +4,7 @@ class Config
 {
   static function start()
   {
-    $configs = glob('components/data/*.php');
+    $configs = glob(__DIR__."/components/data/*.php");
 
     foreach ($configs as $config)
       require $config;
